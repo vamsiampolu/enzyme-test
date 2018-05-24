@@ -8,10 +8,12 @@
     "babel-core": "6.21.0",
     "babel-jest": "20.0.3",
     "babel-plugin-import": "1.7.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
     "babel-preset-react": "6.16.0",
     "enzyme": "3.3.0",
     "enzyme-adapter-react-15.4": "^1.0.5",
-    "react-addons-test-utils": "15.1.0",
+    "jest": "22.1.1",
+    "react-addons-test-utils": "15.2.1",
     "react-dom": "15.2.1",
     "react-test-renderer": "15.3.0"
   },
@@ -22,15 +24,6 @@
     "presets": [
       "react"
     ],
-    "plugins": [
-      [
-        "import",
-        {
-          "libraryName": "antd",
-          "style": true
-        }
-      ]
-    ],
     "env": {
       "test": {
         "plugins": [
@@ -38,5 +31,8 @@
         ]
       }
     }
+  },
+  "scripts": {
+    "test": "jest"
   }
 }
